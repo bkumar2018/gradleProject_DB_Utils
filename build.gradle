@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.amazonaws:aws-java-sdk:1.11.163'
+    compile 'commons-io:commons-io:2.11.0'
+    compile 'org.mongodb:mongodb-driver:3.4.3'
+    compile 'org.elasticsearch:elasticsearch:5.6.2'
+    compile 'org.elasticsearch.client:transport:5.6.2'
+
+}
